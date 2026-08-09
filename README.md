@@ -8,7 +8,7 @@
   </p>
   <p>
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-AGPL_v3-blue.svg" alt="License: AGPL v3" /></a>
-    <img src="https://img.shields.io/badge/Go-1.23+-00ADD8?logo=go&logoColor=white" alt="Go" />
+    <img src="https://img.shields.io/badge/Go-1.25+-00ADD8?logo=go&logoColor=white" alt="Go" />
     <img src="https://img.shields.io/badge/Docker-一键部署-2496ED?logo=docker&logoColor=white" alt="Docker" />
     <img src="https://img.shields.io/github/stars/DiTingAI/ditingyun?style=social" alt="GitHub stars" />
   </p>
@@ -25,14 +25,15 @@
 
 ---
 
-> 🚧 **项目处于 MVP 快速迭代阶段**，核心管道正在密集构建。欢迎 Star 关注进展，也欢迎提前加入讨论区参与设计。
+> ✅ **v0.1.0 MVP 已发布** — 上传→转写→清洗→检索→问答全链路跑通。欢迎 Star 关注后续迭代，也欢迎在 Issue 区参与设计讨论。
 
 ## ✨ 特性
 
 - **🎙️ 音视频转写** — 接入 Whisper（云端 API 或本地 whisper.cpp），会议录屏、培训视频一键转文字
 - **🧹 AI 清洗纠错** — 自动过滤语气词、修正专业术语，输出干净可读的逐字稿
-- **🔍 语义检索** — 不是关键词匹配，是自然语言检索：输入问题，直接定位到原话所在的时间戳
+- **🔍 语义检索** — 不是关键词匹配，是自然语言检索：输入问题，直接定位到包含原话的文本片段
 - **💬 知识问答（RAG）** — 基于团队全部音视频资产提问，答案自带出处引用
+- **🔌 三路服务解耦** — 转写 / 清洗 / 向量化各自独立配置，可混搭 OpenAI、自建服务或本地模型
 - **🔒 完全私有化** — 单容器运行，数据不出你的服务器；代码完全开源，随时审查
 - **🐳 5 分钟部署** — `docker compose up -d`，一条命令跑起整个系统
 
@@ -43,7 +44,7 @@
 ```bash
 git clone https://github.com/DiTingAI/ditingyun.git
 cd ditingyun
-cp .env.example .env   # 填入你的 OpenAI 兼容 API Key
+cp .env.example .env   # 配置三路 AI 服务（Chat / Whisper / Embed）
 docker compose up -d
 ```
 
@@ -58,7 +59,7 @@ docker compose up -d
                     │
                     ▼
         ┌────────────────────────┐
-        │    ditingyun-server     │   Go 单二进制，零外部服务依赖
+        │    ditingyun-server     │   Go 单二进制，无 MySQL/Redis/MQ 依赖
         └───────────┬────────────┘
                     │
      ┌──────────────┼───────────────┐
@@ -71,7 +72,7 @@ docker compose up -d
      └──────────────┴───────────────┘
                     ▼
           语义检索 / 知识问答
-          （答案自带时间戳出处）
+          （答案自带来源片段引用）
 ```
 
 详细设计取舍见 [docs/architecture.md](docs/architecture.md)。
@@ -93,11 +94,12 @@ docker compose up -d
 ## 🗺️ Roadmap
 
 - [x] 仓库初始化 · AGPL-3.0
-- [ ] **v0.1.0 MVP**：上传 → 转写 → 纠错 → 检索 → 问答 全链路
+- [x] **v0.1.0 MVP**：上传 → 转写 → 纠错 → 检索 → 问答 全链路
+- [x] 嵌入式 Web UI（上传 / 检索 / 问答三标签页）
 - [ ] 本地 whisper.cpp 支持，零 API Key 完全离线运行
+- [ ] 时间戳定位（检索结果跳转到视频对应时间点播放）
 - [ ] 说话人分离（自动区分会议发言人）
 - [ ] 中文专业术语纠错词库（社区共建）
-- [ ] Web 管理台 UI
 
 ## 🤝 参与贡献
 
