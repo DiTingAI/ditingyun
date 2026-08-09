@@ -30,3 +30,13 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# 谛听云补充
+.env
+.env.*
+!.env.example
+data/
+ditingyun
+dist/
+node_modules/
+.DS_Store

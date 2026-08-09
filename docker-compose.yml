@@ -1,0 +1,14 @@
+services:
+  ditingyun:
+    build: .
+    container_name: ditingyun
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    volumes:
+      - ditingyun-data:/data
+    restart: unless-stopped
+
+volumes:
+  ditingyun-data:
