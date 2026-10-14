@@ -31,7 +31,7 @@
 > 🏢 **机构客户（券商研究所 / 合规 / 培训中心）**
 > 需要批量处理存量材料、纪要**可检索可溯源**、合规留痕（审计水印）、
 > 私有化交付与内部系统对接？本仓库是完全开源的数据内核，机构侧另提供交付与支持服务 ——
-> [了解机构方案](https://www.ditingyun.cn/brokerage) · [预约 14 天试点](https://www.ditingyun.cn/contact)
+> [了解机构方案](https://www.ditingyun.cn/brokerage) · [免登录看真实效果](https://www.ditingyun.cn/demo/notes) · [预约 14 天试点](https://www.ditingyun.cn/contact)
 
 ## ✨ 特性
 
