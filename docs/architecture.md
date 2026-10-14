@@ -64,5 +64,5 @@ ditingyun/
 ## 与云端版的关系
 
 - 本仓库（`DiTingAI/ditingyun`）：社区版核心引擎，AGPL-3.0
-- 官网（[ditingyun.cn](https://ditingyun.cn)）：云端托管版入口，私有仓库独立迭代
+- 官网（[www.ditingyun.cn](https://www.ditingyun.cn)）：云端托管版入口，私有仓库独立迭代
 - 两者共享品牌与产品理念，代码边界清晰、互不依赖

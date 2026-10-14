@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<title>百家号封面（1200x800，3:2）</title>
+<!--
+  百家号封面源文件（不上线，仅用于生成 assets/baijiahao-cover.png）
+  为什么必须配封面：百家号对无图文章推荐量极低，封面是发布硬要求。
+  设计取向：百家号是资讯平台 → 用"冲突标题 + 数字"，而不是技术术语。
+  尺寸：1200x800（3:2，百家号单图推荐比例）
+-->
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 800px; overflow: hidden; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
+                 "Microsoft YaHei", sans-serif;
+    background: #10131f;
+    color: #fff;
+    padding: 72px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  .glow { position: absolute; border-radius: 9999px; filter: blur(95px); opacity: .5; }
+  .g1 { width: 620px; height: 620px; background: #5546d6; left: -180px; top: -200px; }
+  .g2 { width: 540px; height: 540px; background: #2563eb; right: -150px; bottom: -220px; }
+
+  /* 顶部：主题标签 */
+  .kicker { position: relative; display: inline-flex; align-items: center; gap: 12px;
+            font-size: 26px; font-weight: 600; color: #c3cbf5; }
+  .kicker::before { content: ""; width: 10px; height: 10px; border-radius: 3px;
+                    background: linear-gradient(135deg, #a5b4fc, #3b82f6); }
+
+  /* 主标题：数字 + 冲突，这是百家号的点击核心 */
+  h1 { position: relative; font-size: 76px; line-height: 1.22; font-weight: 800;
+       letter-spacing: -1.5px; }
+  h1 b { color: #ffd166; font-weight: 900; }
+  h1 em { font-style: normal;
+          background: linear-gradient(135deg, #b9c4ff, #60a5fa);
+          -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+  .sub { position: relative; margin-top: 26px; font-size: 30px; line-height: 1.5; color: #b7bfe6; }
+
+  .foot { position: relative; display: flex; align-items: center; justify-content: space-between;
+          border-top: 1px solid rgba(255,255,255,.16); padding-top: 28px; }
+  .brand { display: flex; align-items: center; gap: 12px; font-size: 26px;
+           font-weight: 700; color: #dfe4ff; }
+  .dot { width: 14px; height: 14px; border-radius: 4px;
+         background: linear-gradient(135deg, #a5b4fc, #3b82f6); }
+  .tip { font-size: 24px; color: #9aa3d4; }
+</style>
+</head>
+<body>
+  <div class="glow g1"></div>
+  <div class="glow g2"></div>
+
+  <div class="kicker">团队知识管理 · 真实折腾记录</div>
+
+  <div>
+    <!-- 第二行控制在 10 字内：76px 字号下可用宽度约 1040px（1200 − 左右各 80 内边距），
+         13 字会折行，把「到？」孤立到第三行（和官网首屏 H1 踩过的是同一个坑）。 -->
+    <h1><b>400 小时</b>会议录屏<br />为什么半年后<em>查不到？</em></h1>
+    <div class="sub">6 个月，340 个录屏——我们把团队的会议记忆从云盘里救了出来</div>
+  </div>
+
+  <div class="foot">
+    <span class="brand"><span class="dot"></span>谛听云 · 让每段音视频都可被检索</span>
+    <span class="tip">踩过的 4 个坑也一起写了</span>
+  </div>
+</body>
+</html>

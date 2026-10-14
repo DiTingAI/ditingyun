@@ -212,4 +212,4 @@ docker compose up -d
 
 ---
 
-*作者：谛听云团队。我们在做"让每一段音视频都可被检索"这件事。官网：[ditingyun.cn](https://ditingyun.cn)*
+*作者：谛听云团队。我们在做"让每一段音视频都可被检索"这件事。官网：[www.ditingyun.cn](https://www.ditingyun.cn)*

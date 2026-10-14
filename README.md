@@ -16,8 +16,9 @@
   <img src="assets/demo.gif" alt="谛听云演示：上传音视频 → AI 转写 → 语义检索 → 知识问答" width="800" />
 
   <p>
-    <a href="https://ditingyun.cn">官网</a> ·
-    <a href="https://ditingyun.cn/#security">云端托管版</a> ·
+    <a href="https://www.ditingyun.cn">官网</a> ·
+    <a href="https://www.ditingyun.cn/brokerage">机构 / 私有化部署</a> ·
+    <a href="https://www.ditingyun.cn/#security">云端托管版</a> ·
     <a href="docs/architecture.md">架构文档</a> ·
     <a href="https://github.com/DiTingAI/ditingyun/issues">问题反馈</a>
   </p>
@@ -26,6 +27,11 @@
 ---
 
 > ✅ **v0.1.0 MVP 已发布** — 上传→转写→清洗→检索→问答全链路跑通。欢迎 Star 关注后续迭代，也欢迎在 Issue 区参与设计讨论。
+
+> 🏢 **机构客户（券商研究所 / 合规 / 培训中心）**
+> 需要批量处理存量材料、纪要**可检索可溯源**、合规留痕（审计水印）、
+> 私有化交付与内部系统对接？本仓库是完全开源的数据内核，机构侧另提供交付与支持服务 ——
+> [了解机构方案](https://www.ditingyun.cn/brokerage) · [预约 14 天试点](https://www.ditingyun.cn/contact)
 
 ## ✨ 特性
 
@@ -87,7 +93,7 @@ docker compose up -d
 | 团队协作 / 多级权限（RBAC） | ❌ | ✅ |
 | 企业自研术语纠错与优化 | ❌ | ✅ |
 | 多租户隔离 / 审计 / SLA | ❌ | ✅ |
-| 私有化部署 + 商业授权 | ❌ | ✅ <a href="https://ditingyun.cn">咨询</a> |
+| 私有化部署 + 商业授权 | ❌ | ✅ <a href="https://www.ditingyun.cn/brokerage">咨询</a> |
 
 社区版永远免费、永远开源。云端版为「不想折腾服务器、需要团队协同与合规」的企业而生。
 
