@@ -66,3 +66,14 @@ ditingyun/
 - 本仓库（`DiTingAI/ditingyun`）：社区版核心引擎，AGPL-3.0
 - 官网（[www.ditingyun.cn](https://www.ditingyun.cn)）：云端托管版入口，私有仓库独立迭代
 - 两者共享品牌与产品理念，代码边界清晰、互不依赖
+
+---
+
+## 相关资源
+
+- [谛听云官网](https://www.ditingyun.cn) — 产品总览与最新动态
+- [云端托管版](https://www.ditingyun.cn/#security) — 免运维托管、团队协同与企业级 support
+- [机构 / 私有化部署方案](https://www.ditingyun.cn/brokerage) — 券商研究所、合规留痕、培训中心交付
+- [免登录看真实效果](https://www.ditingyun.cn/demo/notes) — 不用注册，直接体验 AI 转写与语义检索
+- [预约 14 天试点 / 联系我们](https://www.ditingyun.cn/contact)
+- [帮助中心](https://www.ditingyun.cn/help) — 音视频转写、多 P 合集处理、导出等使用教程
